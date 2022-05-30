@@ -152,7 +152,7 @@ public class WeatherPage
 
         try
         {
-            ele = driver.FindElement(By.Id(locationNameAsOf));
+            ele = driver.FindElement(By.Xpath(locationNameAsOf));
             value = ele.GetAttribute("innerText");
 
             if (text.ToLower() == value.ToLower())
